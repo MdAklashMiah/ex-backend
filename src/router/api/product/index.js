@@ -1,10 +1,9 @@
 const express = require("express")
+const { addProductController } = require("../../../controller/productController")
 
 const router = express.Router()
 
-router.get("/", (req, res)=>{
-    return res.send("product is working")
-})
+router.post("/addproduct", addProductController)
 
 
 
