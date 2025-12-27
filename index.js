@@ -6,6 +6,10 @@ const router = require("./src/router");
 const app = express();
 port = 4000;
 
+app.use(express.json())
+
+app.use(express.static("uploads"))
+
 dbConnection();
 
 app.use(router)
