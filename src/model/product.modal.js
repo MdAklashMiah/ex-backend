@@ -14,6 +14,9 @@ const productSchema = new mongoose.Schema(
             type: String,
             required: [true, "Image is required"]
         },
+        slug:{
+            type: String
+        },
         stock:{
             type: Number,
         },
